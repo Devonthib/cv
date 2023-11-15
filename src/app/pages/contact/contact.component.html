@@ -1,0 +1,43 @@
+<div class="container-fluid all-box">
+
+  <div class="title-text">Contact</div>
+
+  <div class="container-fluid">
+    <div class="row content-box">
+      <div class="col-3"></div>
+      <div class="col-lg-6 col-sm-12 item-box">
+        <div class="card">
+          <div class="email-box">
+            <div class="icon-div">
+              <fa-icon class="faicon" [icon]="faEnvelope"></fa-icon>
+            </div>
+            <div class="section-title">Email</div>
+            <div class="separator"></div>
+            <div class="section-text">{{email}}</div>
+            <div class="btn-div">
+            <button class="btn btn-primary" (click)="sendEmail()">Email</button>
+          </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-3"></div>
+      <!-- <div class="col-lg-6 col-sm-12 item-box">
+        <div class="card">
+          <div class="chat-box">
+            <div class="icon-div">
+              <fa-icon class="faicon" [icon]="faMessageQuestion"></fa-icon>
+            </div>
+            <div class="section-title">Live chat</div>
+            <div class="separator"></div>
+            <div class="section-text">Coming soon..</div>
+            <div class="btn-div">
+            <button class="btn btn-primary" disabled>Chat</button>
+          </div>
+          </div>
+        </div>
+      </div> -->
+
+    </div>
+  </div>
+</div>

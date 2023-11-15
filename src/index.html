@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Devon Thibodeau</title>
+    <base href="/" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700"
+    />
+    <!-- SPLASH SCREEN-->
+    <link
+      rel="stylesheet"
+      id="layout-styles-anchor"
+      href="./assets/splash-screen.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/media/logos/FaviconPackage/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/media/logos/FaviconPackage/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/media/logos/FaviconPackage/favicon-16x16.png">
+    <link rel="manifest" href="./assets/media/logos/FaviconPackage/site.webmanifest">
+    <link rel="mask-icon" href="./assets/media/logos/FaviconPackage/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="./assets/media/logos/FaviconPackage/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="./assets/media/logos/FaviconPackage/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    <meta
+      property="og:image"
+      content="./assets/media/icons/SharpDark.png"
+    />
+    <meta property="og:title" content="Devon Thibodeau | Learn about Devon" />
+
+  <body root id="kt_body" class="mat-typography">
+    <!-- <body root id="kt_body" class="mat-typography" direction="rtl" dir="rtl" style="direction: rtl"></body> -->
+    <!--begin::Theme mode setup on page load-->
+    <script>
+      if (document.documentElement) {
+        var defaultThemeMode = "system";
+
+        var hasKTName = document.body.hasAttribute("data-kt-name");
+        var lsKey = "kt_" + (hasKTName ? name + "_" : "") + "theme_mode_value";
+        var themeMode = localStorage.getItem(lsKey);
+        if (!themeMode) {
+          if (defaultThemeMode === "system") {
+            themeMode = window.matchMedia("(prefers-color-scheme: dark)")
+              .matches
+              ? "dark"
+              : "light";
+          } else {
+            themeMode = defaultThemeMode;
+          }
+        }
+
+        document.documentElement.setAttribute("data-bs-theme", themeMode);
+      }
+    </script>
+    <!--end::Theme mode setup on page load-->
+    <div id="splash-screen" class="splash-screen">
+      <img
+        src="./assets/media/logos/SharpD-SPLASH.png"
+        alt="Devon logo"
+      />
+      <span>Loading ...</span>
+    </div>
+  </body>
+</html>

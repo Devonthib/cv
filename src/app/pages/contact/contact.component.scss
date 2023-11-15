@@ -1,0 +1,85 @@
+@import '/src/assets/sass/_variables.scss';
+
+
+.all-box {
+  text-align: center;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.title-text {
+  padding-top: 2%;
+  padding-bottom: 1%;
+  font-size: 4rem;
+  font-weight: 900;
+  color: $main-color;
+}
+
+.section-title {
+  color: $main-color;
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+.section-text {
+  padding-bottom: 4%;
+  padding-top: 3%;
+  color: $main-color;
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+}
+
+.faicon {
+  font-size: 2rem;
+  color: $accent-color;
+}
+
+.icon-div {
+  padding-top: 2%;
+}
+
+.separator {
+  width: 35%;
+  height: 2px;
+  background-color: $main-color;
+  margin: 0 auto;
+  margin-top: 2%;
+}
+
+
+.btn-div {
+  padding-bottom: 3%;
+}
+
+// .btn {
+//   background-color: #ffc107;
+//   opacity: 1;
+//   transition: background-color .25s ease-in-out, opacity .25s ease-in-out;
+//   font-size: 1.2rem;
+//   font-weight: 700;
+// }
+
+// .btn:hover,
+// .btn:active,
+// .btn:focus,
+// .btn:visited {
+//   background-color: #ffc107;
+//   opacity: .8;
+//   color: black;
+// }
+// .btn:disabled {
+//   background-color: #ffc107;
+//   opacity: .65;
+//   color: black;
+// }
+
+
+
+// MOBILE STYLES
+@media (max-width: 767px) {
+    .item-box {
+      padding-top: 2%;
+      padding-bottom: 6%;
+    }
+  }

@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://devonthibodeau.com/sitemap.xml

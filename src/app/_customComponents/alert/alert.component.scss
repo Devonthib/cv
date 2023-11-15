@@ -1,0 +1,56 @@
+@import '/src/assets/sass/_variables.scss';
+
+
+
+
+
+
+
+.wrapper {
+    position: relative;
+  }
+
+  .alert-container {
+    position: absolute;
+    top: 1rem;
+    left: 0rem;
+    right: 0rem;
+    z-index: 9999;
+  }
+
+  .alert {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .content-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .custom-close-btn {
+    font-size: 1.3rem;
+    background: transparent;
+    border: none;
+    padding: 0;
+    color: inherit;
+
+    &:hover,
+    &:focus {
+      color: $main-color;
+      text-decoration: none;
+      outline: none;
+      box-shadow: none;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .alert-container {
+      position: fixed;
+      top: 6rem;
+      left: 2rem;
+      right: 2rem;
+    }
+  }
+

@@ -1,0 +1,53 @@
+:root {
+  /* Light Theme */
+  --page-bg: white;
+  --page-bg-accent: rgb(230, 230, 230);
+  --page-bg-accent-accent: rgb(205, 205, 205);
+  --accent-color: rgb(47, 153, 195);
+  --accent-color-dark: rgb(42, 138, 176);
+  --main-color: #414141;
+  --secondary-color: #ffa337;
+  --page-bg-color: #121212;
+  --navbar-color: #01100a;
+  --green: #27a972;
+  --green-dark: #1e905e;
+  --red-color: #ff3e3e;
+  --default-text-color: #000000;
+}
+
+html[data-bs-theme="dark"] {
+  /* Dark Theme */
+  --page-bg: #121212;
+  --page-bg-accent: rgb(25, 25, 25);
+  --page-bg-accent-accent: rgb(50, 50, 50);
+  --accent-color: rgb(47, 153, 195);
+  --accent-color-dark: rgb(42, 138, 176);
+  --main-color: #D1D1D1;
+  --secondary-color: #ffa337;
+  --page-bg-color: #121212;
+  --navbar-color: #01100a;
+  --green: #27a972;
+  --green-dark: #1e905e;
+  --red-color: #ff3e3e;
+  --default-text-color: #ffffff;
+}
+
+$page-bg: var(--page-bg);
+$page-bg-accent: var(--page-bg-accent);
+$page-bg-accent-accent: var(--page-bg-accent-accent);
+$accent-color: var(--accent-color);
+$accent-color-dark: var(--accent-color-dark);
+$main-color: var(--main-color);
+$secondary-color: var(--secondary-color);
+$page-bg-color: var(--page-bg-color);
+$navbar-color: var(--navbar-color);
+$green: var(--green);
+$red-color: var(--red-color);
+$default-text-color: var(--default-text-color);
+$icon-color: var(--default-text-color);
+
+
+body {
+  background-color: $page-bg;
+  color: $default-text-color;
+}

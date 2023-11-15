@@ -1,0 +1,12 @@
+<div class="wrapper">
+    <div class="alert-container">
+      <div *ngFor="let alert of alertList; let i = index" [ngClass]="['alert', 'alert-dismissible', 'fade', 'show', getAlertClass(alert.type)]" role="alert">
+        <div class="content-container">
+          <strong>{{ alert.message }}</strong>
+          <button type="button" class="custom-close-btn" (click)="removeAlert(i)" aria-label="Close">
+            <fa-icon [icon]="faCircleXmark" aria-hidden="true"></fa-icon>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
