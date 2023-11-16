@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { LayoutService } from '../../core/layout.service';
-import { faCircleUser } from '@fortawesome/pro-thin-svg-icons/faCircleUser';
+import { faCircleUser } from '@fortawesome/free-regular-svg-icons/faCircleUser';
 
 
 @Component({

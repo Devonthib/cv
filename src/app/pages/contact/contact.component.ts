@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { Title } from '@angular/platform-browser';
-import { faMessageQuestion } from '@fortawesome/pro-solid-svg-icons';
-import { faEnvelope } from '@fortawesome/pro-solid-svg-icons';
+import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 import { ContentService } from 'src/app/content.service';
 import {
   fadeInAnimation,
@@ -32,7 +31,6 @@ import {
 })
 export class ContactComponent {
 
-  faMessageQuestion = faMessageQuestion;
   faEnvelope = faEnvelope
 
   constructor(
