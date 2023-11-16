@@ -1,1 +1,32 @@
-Hi
+  <div class="homepage-container">
+    <section class="hero-section">
+        <div class="profile-section">
+          <img [@slideInFromTop]="{ value: '', params: { time: '500ms' } }" routerLink="/about" src="./assets/media/photos/profcircle.png" alt="Devon Thibodeau" class="profile-photo">
+          <h1 [@slideInFromLeft]="{ value: '', params: { time: '500ms' } }">Devon Thibodeau</h1>
+          <p [@slideInFromRight]="{ value: '', params: { time: '500ms' } }" class="bio">Innovative software developer with expertise in Python, Azure, and web technologies.</p>
+        </div>
+      </section>
+    <section [@slideInFromBottom]="{ value: '', params: { time: '500ms' } }" class="tiles-section">
+      <a routerLink="/portfolio" class="tile col-4 col-12-sm" id="dremsly-tile">
+        <img *ngIf="currentTheme === 'light'" src="./assets/media/photos/browsericon.png" alt="Browser Icon" class="tile-background">
+        <img *ngIf="currentTheme === 'dark'" src="./assets/media/photos/browsericon_white.png" alt="Browser Icon" class="tile-background">
+        <img src="./assets/media/logos/dremsly_logo.png" alt="Dremsly Logo" class="tile-logo dr-logo">
+        <h2>Dremsly</h2>
+        <p>Free instant dream analysis using AI.</p>
+      </a>
+      <a routerLink="/portfolio" class="tile col-4 col-12-sm" id="jobrocketeer-tile">
+        <img *ngIf="currentTheme === 'light'" src="./assets/media/photos/browsericon.png" alt="Browser Icon" class="tile-background">
+        <img *ngIf="currentTheme === 'dark'" src="./assets/media/photos/browsericon_white.png" alt="Browser Icon" class="tile-background">
+        <img src="./assets/media/logos/jobrocketeer_logo.png" alt="Job Rocketeer Logo" class="tile-logo jr-logo">
+        <h2>Job Rocketeer</h2>
+        <p>Cover letters generated using LLMs.</p>
+      </a>
+      <a routerLink="/portfolio" class="tile col-4 col-12-sm" id="farmdefense-tile">
+        <img *ngIf="currentTheme === 'light'" src="./assets/media/photos/browsericon.png" alt="Browser Icon" class="tile-background">
+        <img *ngIf="currentTheme === 'dark'" src="./assets/media/photos/browsericon_white.png" alt="Browser Icon" class="tile-background">
+        <img src="./assets/media/logos/farmdefense_logo.png" alt="Farm Defense Logo" class="tile-logo fd-logo">
+        <h2>Farm Defense</h2>
+        <p>A solo indie game released on steam.</p>
+      </a>
+    </section>
+  </div>

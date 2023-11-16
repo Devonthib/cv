@@ -71,6 +71,10 @@ export class ThemeModeService {
     }
   }
 
+  public getCurrentTheme(): ThemeModeType {
+    return this.mode.value;
+  }
+
   public init() {
     this.updateMode(this.mode.value);
     this.updateMenuMode(this.menuMode.value);

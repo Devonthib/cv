@@ -52,34 +52,15 @@
   padding-bottom: 3%;
 }
 
-// .btn {
-//   background-color: #ffc107;
-//   opacity: 1;
-//   transition: background-color .25s ease-in-out, opacity .25s ease-in-out;
-//   font-size: 1.2rem;
-//   font-weight: 700;
-// }
-
-// .btn:hover,
-// .btn:active,
-// .btn:focus,
-// .btn:visited {
-//   background-color: #ffc107;
-//   opacity: .8;
-//   color: black;
-// }
-// .btn:disabled {
-//   background-color: #ffc107;
-//   opacity: .65;
-//   color: black;
-// }
-
 
 
 // MOBILE STYLES
 @media (max-width: 767px) {
     .item-box {
-      padding-top: 2%;
+      padding-top: 7%;
       padding-bottom: 6%;
+    }
+    .email-box {
+      padding: 5%;
     }
   }

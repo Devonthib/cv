@@ -3,12 +3,32 @@ import { Title } from '@angular/platform-browser';
 import { faMessageQuestion } from '@fortawesome/pro-solid-svg-icons';
 import { faEnvelope } from '@fortawesome/pro-solid-svg-icons';
 import { ContentService } from 'src/app/content.service';
+import {
+  fadeInAnimation,
+  slideInFromLeftAnimation,
+  slideInFromRightAnimation,
+  listItemAnimation,
+  slideInFromTopAnimation,
+  slideInFromBottomAnimation,
+  scaleUpAnimation,
+  rotateAnimation,
+} from 'src/app/animations';
 
 
 @Component({
   selector: 'app-contact',
   templateUrl: './contact.component.html',
   styleUrls: ['./contact.component.scss'],
+  animations: [
+    fadeInAnimation,
+    slideInFromLeftAnimation,
+    slideInFromRightAnimation,
+    listItemAnimation,
+    slideInFromTopAnimation,
+    slideInFromBottomAnimation,
+    scaleUpAnimation,
+    rotateAnimation,
+  ],
 })
 export class ContactComponent {
 

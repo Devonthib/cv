@@ -1,0 +1,28 @@
+@import '/src/assets/sass/_variables.scss';
+
+.resume-container {
+    padding: 4% 5%;
+    background-color: $page-bg;
+    color: $default-text-color;
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  
+  .resume-header {
+    margin-bottom: 30px;
+  }
+  
+  h1 {
+    font-size: 2.5em;
+    color: $accent-color;
+  }
+  
+  .resume-display {
+    margin-bottom: 30px;
+    
+  }
+
+  .pdf {
+    width: 100%;
+    height: 78%;
+  }

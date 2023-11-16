@@ -12,7 +12,8 @@
   --green: #27a972;
   --green-dark: #1e905e;
   --red-color: #ff3e3e;
-  --default-text-color: #000000;
+  --default-text-color: rgb(0, 0, 0);
+  --invert-percent: 0%;
 }
 
 html[data-bs-theme="dark"] {
@@ -29,7 +30,8 @@ html[data-bs-theme="dark"] {
   --green: #27a972;
   --green-dark: #1e905e;
   --red-color: #ff3e3e;
-  --default-text-color: #ffffff;
+  --default-text-color: rgb(255, 255, 255);
+  --invert-percent: 100%;
 }
 
 $page-bg: var(--page-bg);
@@ -45,9 +47,26 @@ $green: var(--green);
 $red-color: var(--red-color);
 $default-text-color: var(--default-text-color);
 $icon-color: var(--default-text-color);
+$invert-percent: var(--invert-percent);
 
 
 body {
   background-color: $page-bg;
+  color: $default-text-color;
+}
+
+h1 {
+  color: $default-text-color;
+}
+
+h2 {
+  color: $default-text-color;
+}
+
+h3 {
+  color: $default-text-color;
+}
+
+p {
   color: $default-text-color;
 }
