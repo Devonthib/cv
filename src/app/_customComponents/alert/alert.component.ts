@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { faCircleXmark } from '@fortawesome/free-regular-svg-icons/';
+import { faCircleXmark } from '@fortawesome/free-regular-svg-icons/faCircleXmark';
 import { ContentService } from 'src/app/content.service';
 
 export interface Alert {
