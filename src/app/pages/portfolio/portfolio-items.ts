@@ -23,7 +23,7 @@ const pitems = [
       {
         "title": "ezure",
         "shortDescription": "Python package for Azure services.",
-        "fullDescription": "Eazure is a Python package designed to simplify interactions with Azure services. Available on PyPI, it provides developers with a set of tools to easily manage and automate tasks within the Azure cloud environment, enhancing productivity and efficiency.",
+        "fullDescription": "ezure is a Python package designed to simplify interactions with Azure services. Available on PyPI, it provides developers with a set of tools to easily manage and automate tasks within the Azure cloud environment, enhancing productivity and efficiency.",
         "imageUrl": "./assets/media/logos/ezure-logo.png",
         "link": "https://github.com/SaaS-Technologies-LLC/ezure"
       },
