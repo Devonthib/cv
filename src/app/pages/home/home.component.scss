@@ -149,7 +149,6 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 200px;
   }
   
   .portfolio-button .rounded-rectangle {
@@ -169,6 +168,15 @@ h1 {
   .p-text {
     margin: auto;
 
+  }
+
+  .devon {
+    margin-bottom: 0;
+    
+  }
+
+  .dev {
+    font-style: italic;
   }
 
   

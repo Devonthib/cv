@@ -1,42 +1,28 @@
-  <div class="homepage-container">
+  <!-- <div class="homepage-container">
     <section class="hero-section">
         <div class="profile-section">
           <img [@slideInFromTop]="{ value: '', params: { time: '500ms' } }" routerLink="/about" src="./assets/media/photos/profcircle.png" alt="Devon Thibodeau" class="profile-photo">
           <h1 [@slideInFromLeft]="{ value: '', params: { time: '500ms' } }">Devon Thibodeau</h1>
-          <p [@slideInFromRight]="{ value: '', params: { time: '500ms' } }" class="bio">
-            Empowering digital landscapes with cutting-edge Python, Azure, and web technologies. Let's innovate together.
-          </p>
         </div>
       </section>
-      <section [@slideInFromBottom]="{ value: '', params: { time: '500ms' } }" class="portfolio-section">
-        <a routerLink="/portfolio" class="portfolio-button">
-          <div class="rounded-rectangle">
-            <p class="p-text">View Portfolio</p>
-          </div>
-        </a>
+  </div> -->
+
+  <div class="homepage-container">
+    <section class="hero-section">
+        <div class="profile-section">
+          <img [@slideInFromTop]="{ value: '', params: { time: '500ms' } }" routerLink="/about" src="./assets/media/photos/profcircle.png" alt="Devon Thibodeau" class="profile-photo">
+          <h1 [@slideInFromLeft]="{ value: '', params: { time: '500ms' } }" class="devon">Devon Thibodeau</h1>
+          <p [@slideInFromRight]="{ value: '', params: { time: '500ms' } }" class="dev">Full-Stack Software Engineer</p>
+          <p [@slideInFromLeft]="{ value: '', params: { time: '500ms' } }" class="bio">
+            Creating seamless, scalable, and innovative software solutions from concept to code. As a Full Stack Software Engineer, I bridge the gap between user experience and technical implementation, delivering robust applications that drive business success and user satisfaction.          </p>
+        </div>
+        <div [@slideInFromBottom]="{ value: '', params: { time: '500ms' } }" class="portfolio-section">
+          <a routerLink="/portfolio" class="portfolio-button">
+            <div class="rounded-rectangle">
+              <p class="p-text">View Portfolio</p>
+            </div>
+          </a>
+        </div> 
       </section>
-    <!-- <section [@slideInFromBottom]="{ value: '', params: { time: '500ms' } }" class="tiles-section">
-      <a routerLink="/portfolio" class="tile col-4 col-12-sm" id="dremsly-tile">
-        <img *ngIf="currentTheme === 'light'" src="./assets/media/photos/browsericon.png" alt="Browser Icon" class="tile-background">
-        <img *ngIf="currentTheme === 'dark'" src="./assets/media/photos/browsericon_white.png" alt="Browser Icon" class="tile-background">
-        <img *ngIf="currentTheme === 'system'" src="./assets/media/photos/browsericon.png" alt="Browser Icon" class="tile-background">
-        <img src="./assets/media/logos/dremsly_logo.png" alt="Dremsly Logo" class="tile-logo dr-logo">
-        <h2>Dremsly</h2>
-        <p>Free instant dream analysis using AI.</p>
-      </a>
-      <a routerLink="/portfolio" class="tile col-4 col-12-sm" id="jobrocketeer-tile">
-        <img *ngIf="currentTheme === 'light'" src="./assets/media/photos/browsericon.png" alt="Browser Icon" class="tile-background">
-        <img *ngIf="currentTheme === 'dark'" src="./assets/media/photos/browsericon_white.png" alt="Browser Icon" class="tile-background">
-        <img src="./assets/media/logos/jobrocketeer_logo.png" alt="Job Rocketeer Logo" class="tile-logo jr-logo">
-        <h2>Job Rocketeer</h2>
-        <p>Cover letters generated using LLMs.</p>
-      </a>
-      <a routerLink="/portfolio" class="tile col-4 col-12-sm" id="farmdefense-tile">
-        <img *ngIf="currentTheme === 'light'" src="./assets/media/photos/browsericon.png" alt="Browser Icon" class="tile-background">
-        <img *ngIf="currentTheme === 'dark'" src="./assets/media/photos/browsericon_white.png" alt="Browser Icon" class="tile-background">
-        <img src="./assets/media/logos/farmdefense_logo.png" alt="Farm Defense Logo" class="tile-logo fd-logo">
-        <h2>Farm Defense</h2>
-        <p>A solo indie game released on steam.</p>
-      </a>
-    </section> -->
+     
   </div>

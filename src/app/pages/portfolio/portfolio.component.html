@@ -63,7 +63,22 @@
 
 
   <div class="row">
-    <div *ngFor="let item of portfolioItems; let i = index" class="card-container col-md-6 col-12"
+    <div class="card-container col-md-6 col-12" *ngFor="let item of portfolioItems; let i = index">
+      <div class="portfolio-card" [@slideInAnimation]="{value: i % 2 === 0 ? 'fromLeft' : 'fromRight', params: {delay: i * 100}}">
+        <div class="card-front">
+          <img [src]="item.imageUrl || './assets/media/logos/SharpDark.png'" [alt]="item.title + ' Logo'" class="portfolio-image dr-logo">
+          <h2>{{ item.title }}</h2>
+          <p class="desc-text">{{ item.shortDescription }}</p>
+        </div>
+        <div class="card-back">
+          <div class="text-container">
+            <p class="desc-text">{{ item.fullDescription }}</p>
+            <a *ngIf="item.link" href="{{ item.link }}" target="_blank" class="button">Check it out</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <div *ngFor="let item of portfolioItems; let i = index" class="card-container col-md-6 col-12"
          [@slideInAnimation]="{value: i % 2 === 0 ? 'fromLeft' : 'fromRight', params: {delay: i * 100}}">
       <div class="portfolio-item card" (click)="openModal(item)">
       <div class="image-container">
@@ -77,7 +92,6 @@
   </div>
 </div>
 
-<!-- Modal -->
 <div class="modal" *ngIf="selectedItem" (click)="closeModal()">
   <div class="modal-content" (click)="$event.stopPropagation()">
     <span class="close" (click)="closeModal()">&times;</span>
@@ -85,4 +99,4 @@
     <p>{{ selectedItem.fullDescription }}</p>
     <a *ngIf="selectedItem.link" href="{{ selectedItem.link }}" target="_blank" class="button">Check it out</a>
   </div>
-</div>
+</div> -->
