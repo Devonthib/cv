@@ -21,28 +21,42 @@ const pitems = [
         "link": "https://store.steampowered.com/app/1654970/Farm_Defense/"
       },
       {
-        "title": "eazure",
+        "title": "ezure",
         "shortDescription": "Python package for Azure services.",
         "fullDescription": "Eazure is a Python package designed to simplify interactions with Azure services. Available on PyPI, it provides developers with a set of tools to easily manage and automate tasks within the Azure cloud environment, enhancing productivity and efficiency.",
-        "imageUrl": "./assets/media/logos/eazure_logo.png",
-        "link": "https://github.com/SaaS-Technologies-LLC/eazure"
+        "imageUrl": "./assets/media/logos/ezure-logo.png",
+        "link": "https://github.com/SaaS-Technologies-LLC/ezure"
       },
       {
         "title": "Freshleads",
         "shortDescription": "Lead generation with instant scraping.",
-        "fullDescription": "Freshleads.com is a powerful lead generation platform that enables users to instantly scrape targeted leads using keyword and zipcode filtering. It's an essential tool for businesses looking to expand their customer base and reach out to new prospects with precision.",
+        "fullDescription": "freshleads.com (minimized version moved to thesaastech.com) is a powerful lead generation platform that enables users to instantly scrape targeted leads using keyword and zipcode filtering. It's an essential tool for businesses looking to expand their customer base and reach out to new prospects with precision.",
         "imageUrl": "./assets/media/logos/Portal-HeaderLogo-1.png",
+        "link": "https://www.dev.thesaastech.com/freshleads"
       },
       {
         "title": "CreatorHub",
         "shortDescription": "Automated Discord subscription service.",
-        "fullDescription": "CreatorHub is an automated subscription service that integrates with Discord to provide daily access to viral content and pre-rendered compilations. It's designed for reaction content creators who need a steady stream of engaging content to maintain their audience's interest.",
+        "fullDescription": "CreatorHub is a work in progress automated subscription service that integrates with Discord to provide daily access to viral content and pre-rendered compilations. It's designed for reaction content creators who need a steady stream of engaging content to maintain their audience's interest.",
+        "imageUrl": "./assets/media/logos/creatorhub-circle.png",
+        "link": "https://discord.gg/3f5duxJMVa"
       },
       {
-        "title": "ReelChef",
-        "shortDescription": "Web app for creating 'reel' videos.",
-        "fullDescription": "ReelChef is an internal web application that streamlines the creation process of short-form 'reel' videos. It features AI-generated imagery and automated scheduling, allowing for efficient uploads to platforms like YouTube and TikTok, catering to the growing demand for quick and engaging video content.",
+        "title": "The Gallery",
+        "shortDescription": "AI-curated virtual image gallery.",
+        "fullDescription": "Free to access and use directory of images generated with artificial intelligence from a wide variety of categories.",
+        "imageUrl": "./assets/media/logos/gallery-circle.png",
+        "link": "https://www.dev.thesaastech.com/gallery"
       },
+      {
+        "title": "This Website",
+        "shortDescription": "Public code repository for this portfolio website.",
+        "fullDescription": "This portfolio website showcases a collection of projects and professional accomplishments. The public code repository provides insight into the development process and offers a transparent look at the technical skills and creativity behind the site's creation.",
+        "link": "https://github.com/Devonthib/devon-website"
+      }
+    ];
+
+    const unusedItems = [
       {
         "title": "Depthify",
         "shortDescription": "Depth map and parallax animation tool.",
@@ -54,11 +68,10 @@ const pitems = [
         "fullDescription": "This Tkinter-based Windows application is a sophisticated automation tool sold to a corporate client. It features advanced bot detection avoidance mechanisms, enabling the automation of bulk actions for thousands of accounts, thereby significantly improving operational efficiency.",
       },
       {
-        "title": "Portfolio Website",
-        "shortDescription": "Public code repository for this portfolio website.",
-        "fullDescription": "This portfolio website showcases a collection of projects and professional accomplishments. The public code repository provides insight into the development process and offers a transparent look at the technical skills and creativity behind the site's creation.",
-        "link": "https://github.com/Devonthib/devon-website"
-      }
-    ];
+        "title": "ReelChef",
+        "shortDescription": "Web app for creating 'reel' videos.",
+        "fullDescription": "ReelChef is an internal web application that streamlines the creation process of short-form 'reel' videos. It features AI-generated imagery and automated scheduling, allowing for efficient uploads to platforms like YouTube and TikTok, catering to the growing demand for quick and engaging video content.",
+      },
+    ]
 
   export default pitems;

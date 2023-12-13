@@ -13,6 +13,7 @@ import {
   scaleUpAnimation,
   rotateAnimation,
   slideInAnimation,
+  rotate360Animation,
 } from 'src/app/animations';
 
 @Component({
@@ -29,6 +30,7 @@ import {
     slideInFromBottomAnimation,
     scaleUpAnimation,
     rotateAnimation,
+    rotate360Animation,
   ],
 })
 export class PortfolioComponent implements OnInit {

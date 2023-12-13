@@ -9,6 +9,7 @@ import { AutosizeModule } from 'ngx-autosize';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatSelectModule } from '@angular/material/select';
+import { MatTooltipModule } from '@angular/material/tooltip';
 
 @NgModule({
   declarations: [PortfolioComponent],
@@ -27,6 +28,7 @@ import { MatSelectModule } from '@angular/material/select';
     MatProgressSpinnerModule,
     MatFormFieldModule,
     MatSelectModule,
+    MatTooltipModule,
     NgbModule,
   ],
 })

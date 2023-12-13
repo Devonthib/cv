@@ -10,13 +10,13 @@
   <div class="homepage-container">
     <section class="hero-section">
         <div class="profile-section">
-          <img [@slideInFromTop]="{ value: '', params: { time: '500ms' } }" routerLink="/about" src="./assets/media/photos/profcircle.png" alt="Devon Thibodeau" class="profile-photo">
-          <h1 [@slideInFromLeft]="{ value: '', params: { time: '500ms' } }" class="devon">Devon Thibodeau</h1>
-          <p [@slideInFromRight]="{ value: '', params: { time: '500ms' } }" class="dev">Full-Stack Software Engineer</p>
-          <p [@slideInFromLeft]="{ value: '', params: { time: '500ms' } }" class="bio">
+          <img [@rotate]=""  routerLink="/about" src="./assets/media/photos/profcircle.png" alt="Devon Thibodeau" class="profile-photo">
+          <h1 [@slideInFromBottom]="" class="devon">Devon Thibodeau</h1>
+          <p [@slideInFromBottom]="" class="dev">Full-Stack Software Engineer</p>
+          <p [@slideInFromBottom]="" class="bio">
             Creating seamless, scalable, and innovative software solutions from concept to code. As a Full Stack Software Engineer, I bridge the gap between user experience and technical implementation, delivering robust applications that drive business success and user satisfaction.          </p>
         </div>
-        <div [@slideInFromBottom]="{ value: '', params: { time: '500ms' } }" class="portfolio-section">
+        <div [@slideInFromBottom]="" class="portfolio-section">
           <a routerLink="/portfolio" class="portfolio-button">
             <div class="rounded-rectangle">
               <p class="p-text">View Portfolio</p>
@@ -24,5 +24,4 @@
           </a>
         </div> 
       </section>
-     
   </div>

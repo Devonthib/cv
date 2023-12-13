@@ -12,7 +12,7 @@ import {
 export const fadeInAnimation = trigger('fadeIn', [
   transition(':enter', [
     style({ opacity: 0 }),
-    animate('500ms ease-out', style({ opacity: 1 })),
+    animate('850ms ease-out', style({ opacity: 1 })),
   ]),
   transition(':leave', [
     animate('500ms ease-in', style({ opacity: 0 })),
@@ -144,16 +144,7 @@ export const scaleUpAnimation = trigger('scaleUp', [
   state('void', style({ opacity: 0, transform: 'scale(0.8)' })),
 ]);
 
-export const rotateAnimation = trigger('rotate', [
-  transition(':enter', [
-    style({ opacity: 0, transform: 'rotate(-180deg)' }),
-    animate('500ms ease-out', style({ opacity: 1, transform: 'rotate(0deg)' })),
-  ]),
-  transition(':leave', [
-    animate('500ms ease-in', style({ opacity: 0, transform: 'rotate(-180deg)' })),
-  ]),
-  state('void', style({ opacity: 0, transform: 'rotate(-180deg)' })),
-]);
+
 
 export const listItemAnimation = trigger('listItem', [
   transition('* <=> *', [
@@ -177,6 +168,29 @@ export const listItemAnimation = trigger('listItem', [
       { optional: true }
     ),
   ]),
+]);
+
+export const rotateAnimation = trigger('rotate', [
+  transition(':enter', [
+    style({ opacity: 0, transform: 'rotate(-180deg)' }),
+    animate('500ms ease-out', style({ opacity: 1, transform: 'rotate(0deg)' })),
+  ]),
+  transition(':leave', [
+    animate('500ms ease-in', style({ opacity: 0, transform: 'rotate(-180deg)' })),
+  ]),
+  state('void', style({ opacity: 0, transform: 'rotate(-180deg)' })),
+]);
+
+export const rotate360Animation = trigger('rotate360', [
+  transition(':enter', [
+    style({ transform: 'rotate(0deg)' }),
+    animate('1s ease-in-out', style({ transform: 'rotate(360deg)' })),
+  ]),
+  // If you want the animation to run on leave as well, uncomment the following:
+  // transition(':leave', [
+  //   animate('1s ease-in-out', style({ transform: 'rotate(-360deg)' })),
+  // ]),
+  state('void', style({ transform: 'rotate(0deg)' })),
 ]);
 
 // Rocket Animation Stuff
