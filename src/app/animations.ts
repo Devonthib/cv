@@ -100,6 +100,17 @@ export const textChangeAnimation = trigger('textChange', [
   state('void', style({ opacity: 0 })),
 ]);
 
+export const slideInAnimation = trigger('slideInAnimation', [
+  transition('void => fromLeft', [
+    style({ transform: 'translateX(-100%)', opacity: 0 }),
+    animate('500ms ease-out', style({ transform: 'translateX(0)', opacity: 1 })),
+  ]),
+  transition('void => fromRight', [
+    style({ transform: 'translateX(100%)', opacity: 0 }),
+    animate('500ms ease-out', style({ transform: 'translateX(0)', opacity: 1 })),
+  ]),
+]);
+
 export const slideInFromBottomFast = trigger('slideInFromBottomFast', [
   state('enter', style({ opacity: 1, transform: 'translateY(0)' })),
   state('leave', style({ opacity: 0, transform: 'translateY(100%)' })),
@@ -185,4 +196,6 @@ export const uploadBoxAnimation = trigger('uploadBoxAnimation', [
   ),
   transition('default => success', [animate('0.5s ease-in-out')]),
   transition('success => default', [animate('0.5s ease-in-out')]),
+
+  
 ]);

@@ -1,6 +1,7 @@
 import { Component, OnInit} from '@angular/core';
 import { ContentService } from 'src/app/content.service';
 import { Title } from '@angular/platform-browser';
+import pitems from './portfolio-items';
 
 import {
   fadeInAnimation,
@@ -11,6 +12,7 @@ import {
   slideInFromBottomAnimation,
   scaleUpAnimation,
   rotateAnimation,
+  slideInAnimation,
 } from 'src/app/animations';
 
 @Component({
@@ -21,6 +23,7 @@ import {
     fadeInAnimation,
     slideInFromLeftAnimation,
     slideInFromRightAnimation,
+    slideInAnimation,
     listItemAnimation,
     slideInFromTopAnimation,
     slideInFromBottomAnimation,
@@ -29,14 +32,25 @@ import {
   ],
 })
 export class PortfolioComponent implements OnInit {
-  constructor(
-    private titleService: Title,
-    private contentService: ContentService
-  ) {}
+  public portfolioItems: any[] = [];
+  public selectedItem: any = null;
+
+  constructor(private titleService: Title) {}
 
   ngOnInit() {
-    this.titleService.setTitle(`${this.contentService.name} | Portfolio`);
+    this.titleService.setTitle('Devon Thibodeau | Portfolio');
+    this.loadPortfolioItems();
   }
 
+  loadPortfolioItems() {
+    this.portfolioItems = pitems;
+  }
 
+  openModal(item: any) {
+    this.selectedItem = item;
+  }
+
+  closeModal() {
+    this.selectedItem = null;
+  }
 }

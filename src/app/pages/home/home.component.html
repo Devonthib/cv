@@ -3,10 +3,19 @@
         <div class="profile-section">
           <img [@slideInFromTop]="{ value: '', params: { time: '500ms' } }" routerLink="/about" src="./assets/media/photos/profcircle.png" alt="Devon Thibodeau" class="profile-photo">
           <h1 [@slideInFromLeft]="{ value: '', params: { time: '500ms' } }">Devon Thibodeau</h1>
-          <p [@slideInFromRight]="{ value: '', params: { time: '500ms' } }" class="bio">Innovative software developer with expertise in Python, Azure, and web technologies.</p>
+          <p [@slideInFromRight]="{ value: '', params: { time: '500ms' } }" class="bio">
+            Empowering digital landscapes with cutting-edge Python, Azure, and web technologies. Let's innovate together.
+          </p>
         </div>
       </section>
-    <section [@slideInFromBottom]="{ value: '', params: { time: '500ms' } }" class="tiles-section">
+      <section [@slideInFromBottom]="{ value: '', params: { time: '500ms' } }" class="portfolio-section">
+        <a routerLink="/portfolio" class="portfolio-button">
+          <div class="rounded-rectangle">
+            <p>View Portfolio</p>
+          </div>
+        </a>
+      </section>
+    <!-- <section [@slideInFromBottom]="{ value: '', params: { time: '500ms' } }" class="tiles-section">
       <a routerLink="/portfolio" class="tile col-4 col-12-sm" id="dremsly-tile">
         <img *ngIf="currentTheme === 'light'" src="./assets/media/photos/browsericon.png" alt="Browser Icon" class="tile-background">
         <img *ngIf="currentTheme === 'dark'" src="./assets/media/photos/browsericon_white.png" alt="Browser Icon" class="tile-background">
@@ -29,5 +38,5 @@
         <h2>Farm Defense</h2>
         <p>A solo indie game released on steam.</p>
       </a>
-    </section>
+    </section> -->
   </div>

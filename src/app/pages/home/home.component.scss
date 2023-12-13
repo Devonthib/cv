@@ -144,6 +144,27 @@ h1 {
     top: 8%;
     width: 95px;
   }
+
+  .portfolio-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+  }
+  
+  .portfolio-button .rounded-rectangle {
+    border-radius: 20px;
+    color: #fff;
+    padding: 20px 80px;
+    font-size: 1.5em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border: 2px solid;
+  }
+  
+  .portfolio-button .rounded-rectangle:hover {
+    background-color: #555;
+  }
   
 
   

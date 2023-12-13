@@ -9,7 +9,7 @@
         </a>
       </nav>
     </header>
-  <div class="row">
+  <!-- <div class="row">
 
     <div [@slideInFromTop]=""  class="card-container col-md-6 col-12">
     <a class="portfolio-item card" href='https://www.dremsly.com'>
@@ -58,5 +58,31 @@
     </div>
     </a>
 </div>
+  </div> -->
+
+
+
+  <div class="row">
+    <div *ngFor="let item of portfolioItems; let i = index" class="card-container col-md-6 col-12"
+         [@slideInAnimation]="{value: i % 2 === 0 ? 'fromLeft' : 'fromRight', params: {delay: i * 100}}">
+      <div class="portfolio-item card" (click)="openModal(item)">
+      <div class="image-container">
+        <img [src]="item.imageUrl || './assets/media/logos/SharpDark.png'" [alt]="item.title + ' Logo'" class="portfolio-image dr-logo">
+      </div>
+      <div class="text-container">
+        <h2>{{ item.title }}</h2>
+        <p class="desc-text">{{ item.shortDescription }}</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal" *ngIf="selectedItem" (click)="closeModal()">
+  <div class="modal-content" (click)="$event.stopPropagation()">
+    <span class="close" (click)="closeModal()">&times;</span>
+    <h2>{{ selectedItem.title }}</h2>
+    <p>{{ selectedItem.fullDescription }}</p>
+    <a *ngIf="selectedItem.link" href="{{ selectedItem.link }}" target="_blank" class="button">Check it out</a>
   </div>
 </div>
