@@ -86,7 +86,7 @@
   }
 
   .card-container {
-    margin-bottom: 30px;
+    padding: 0;
   }
 
   .jr-logo {
@@ -168,13 +168,13 @@
 
   .card-container {
     perspective: 1000px;
-    margin-bottom: 30px;
+    
   }
 
   .portfolio-card {
     position: relative;
     width: 100%;
-    height: 320px;
+    height: 275px;
     transform-style: preserve-3d;
     transition: transform 0.85s;
     border-radius: 10px;
@@ -206,6 +206,10 @@
 
   .card-container:hover .portfolio-card {
     transform: rotateY(180deg);
+  }
+
+  .surrounder {
+    padding: 27px;
   }
 
 

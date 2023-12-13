@@ -63,7 +63,8 @@
 
 
   <div class="row">
-    <div class="card-container col-md-6 col-12" *ngFor="let item of portfolioItems; let i = index">
+    <div class="surrounder  col-md-6 col-12" *ngFor="let item of portfolioItems; let i = index">
+    <div class="card-container">
       <div class="portfolio-card" [@slideInAnimation]="{value: i % 2 === 0 ? 'fromLeft' : 'fromRight', params: {delay: i * 100}}">
         <div class="card-front">
           <img [src]="item.imageUrl || './assets/media/logos/SharpDark.png'" [alt]="item.title + ' Logo'" class="portfolio-image dr-logo">
@@ -77,6 +78,7 @@
           </div>
         </div>
       </div>
+    </div>
     </div>
     <!-- <div *ngFor="let item of portfolioItems; let i = index" class="card-container col-md-6 col-12"
          [@slideInAnimation]="{value: i % 2 === 0 ? 'fromLeft' : 'fromRight', params: {delay: i * 100}}">
