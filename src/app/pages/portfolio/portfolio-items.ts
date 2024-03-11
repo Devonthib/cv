@@ -1,4 +1,25 @@
 const pitems = [
+  {
+    "title": "Friendli (Coming soon)",
+    "shortDescription": "Cross-platform mobile application",
+    "fullDescription": "In wake of the Omegle shutdown, Friendli will be a cross-platform application that allows users to chat, video call, and text. This application will be available on both iOS and Android devices.",
+    "imageUrl": "./assets/media/logos/star-struck.png",
+    "link": ""
+  },
+  {
+    "title": "OPMarket",
+    "shortDescription": "Web3 powered digital asset marketplace.",
+    "fullDescription": "OPMarket is a web3 powered digital asset marketplace that allows users to purchase and sell digital assets in real time. It offers a secure platform that is accessible to anyone. ",
+    "imageUrl": "./assets/media/logos/opmarket.png",
+    "link": "https://www.opmarket.ai"
+  },
+  {
+    "title": "Farm Defense",
+    "shortDescription": "Unreal Engine tower defense game.",
+    "fullDescription": "Farm Defense is an engaging tower defense game developed using Unreal Engine. It boasts complex balance mechanics and strategic gameplay, challenging players to defend their farm against waves of oncoming threats with a variety of defensive structures and upgrades.",
+    "imageUrl": "./assets/media/logos/farmdefense_logo.png",
+    "link": "https://store.steampowered.com/app/1654970/Farm_Defense/"
+  },
     {
         "title": "Dremsly",
         "shortDescription": "GPT-3.5 integrated dream analysis tool.",
@@ -7,26 +28,21 @@ const pitems = [
         "link": "https://www.dremsly.com"
       },
       {
-        "title": "Jobrocketeer",
-        "shortDescription": "AI-powered cover letter generator.",
-        "fullDescription": "Jobrocketeer.com is an innovative tool that leverages AI to help job seekers create compelling cover letters with ease. Featuring Stripe integration for payments, it streamlines the job application process by generating personalized cover letters tailored to specific job descriptions and industries.",
-        "imageUrl": "./assets/media/logos/jobrocketeer_logo.png",
-        "link": "https://www.jobrocketeer.com"
-      },
-      {
-        "title": "Farm Defense",
-        "shortDescription": "Unreal Engine tower defense game.",
-        "fullDescription": "Farm Defense is an engaging tower defense game developed using Unreal Engine. It boasts complex balance mechanics and strategic gameplay, challenging players to defend their farm against waves of oncoming threats with a variety of defensive structures and upgrades.",
-        "imageUrl": "./assets/media/logos/farmdefense_logo.png",
-        "link": "https://store.steampowered.com/app/1654970/Farm_Defense/"
-      },
-      {
         "title": "ezure",
         "shortDescription": "Python package for Azure services.",
         "fullDescription": "ezure is a Python package designed to simplify interactions with Azure services. Available on PyPI, it provides developers with a set of tools to easily manage and automate tasks within the Azure cloud environment, enhancing productivity and efficiency.",
         "imageUrl": "./assets/media/logos/ezure-logo.png",
         "link": "https://github.com/SaaS-Technologies-LLC/ezure"
       },
+      {
+        "title": "Jobrocketeer",
+        "shortDescription": "AI-powered cover letter generator.",
+        "fullDescription": "Jobrocketeer.com is an innovative tool that leverages AI to help job seekers create compelling cover letters with ease. Featuring Stripe integration for payments, it streamlines the job application process by generating personalized cover letters tailored to specific job descriptions and industries.",
+        "imageUrl": "./assets/media/logos/jobrocketeer_logo.png",
+        "link": "https://www.jobrocketeer.com"
+      },
+      
+      
       {
         "title": "Freshleads",
         "shortDescription": "Lead generation with instant scraping.",
