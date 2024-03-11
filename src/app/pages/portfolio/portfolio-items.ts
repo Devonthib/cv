@@ -20,6 +20,14 @@ const pitems = [
     "imageUrl": "./assets/media/logos/farmdefense_logo.png",
     "link": "https://store.steampowered.com/app/1654970/Farm_Defense/"
   },
+  {
+    "title": "Rightize.pro",
+    "shortDescription": "Automated system to save and upload content.",
+    "fullDescription": "rightize.pro is a website that everyday (or on command) will pull all Rocket League clips that were captured in game and upload them to Azure. Then while remaining on the website I can schedule them to be uploaded on multiple social medias.",
+    "imageUrl": "./assets/media/logos/rlogo.jpg",
+    "link": "https://rightize.pro"
+  },
+
     {
         "title": "Dremsly",
         "shortDescription": "GPT-3.5 integrated dream analysis tool.",
